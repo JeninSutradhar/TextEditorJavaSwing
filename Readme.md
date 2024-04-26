@@ -4,10 +4,18 @@ This Text Editor is a sleek and user-friendly Java application designed to provi
 ## Features
 
 - **Lightning-Fast Opening and Saving**: Quickly open and save files for efficient workflow.
-https://github.com/JeninSutradhar/TextEditorJavaSwing/assets/111521642/7c1a75b3-c72e-4e44-8520-ca795f6d9587
+  
+
+
+https://github.com/JeninSutradhar/TextEditorJavaSwing/assets/111521642/f0d1e059-19a4-4346-927b-c36f5a05c2b3
+
+
+
 - **File Management**: Open, save, and close files with ease.
 - **Search Functionality**: Search and highlight specific words or phrases within the text.
+
 https://github.com/JeninSutradhar/TextEditorJavaSwing/assets/111521642/12db7d8d-b802-44d4-9514-2055c3fa659b
+
 - **Font Customization**: Ability to customize the font style and size for personalized editing.
 - **Auto-Indentation**: Automatically indents code for better structure and organization.
 - **Line Numbers**: Display of line numbers for easy navigation within the text.

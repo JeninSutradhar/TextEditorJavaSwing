@@ -292,7 +292,8 @@ class SyntaxHighlighter {
         while ((pos = text.indexOf(word, pos)) >= 0) {
             try {
                 textArea.getHighlighter().addHighlight(pos, pos + word.length(), painter);
-                textArea.setSelectionColor(Color.BLUE); // Change the foreground color
+                // Change the foreground color
+                textArea.setSelectionColor(Color.BLUE); 
                 pos += word.length();
             } catch (BadLocationException e) {
                 e.printStackTrace();

@@ -283,6 +283,9 @@ public class ImprovedTextEditor extends JFrame {
     }
 }
 
+/*
+* THIS FEATURE MAY NOT WORK ON SOME SYSTEMS
+*/
 // Class for syntax highlighting
 class SyntaxHighlighter {
     // Method to highlight keywords in the text area
@@ -303,7 +306,7 @@ class SyntaxHighlighter {
             try {
                 textArea.getHighlighter().addHighlight(pos, pos + word.length(), painter);
                 // Change the foreground color
-                textArea.setSelectionColor(Color.BLUE); 
+                textArea.setSelectionColor(Color.GREEN); // Set Custom color here 
                 pos += word.length();
             } catch (BadLocationException e) {
                 e.printStackTrace();

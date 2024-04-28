@@ -69,12 +69,19 @@ public class ImprovedTextEditor extends JFrame {
         // Create menu bar and menus
         JMenuBar menuBar = new JMenuBar();
         JMenu fileMenu = new JMenu("File");
+        // Sub-Items for the "File" JMenu
         JMenuItem openItem = new JMenuItem("Open");
         JMenuItem saveItem = new JMenuItem("Save-As");
         JMenuItem closeItem = new JMenuItem("Close");
 
         JMenu editMenu = new JMenu("Edit");
         JMenu fontMenu = new JMenu("Font");
+        
+        // OPTIONAL ITEMS FOR "EDIT" JMenu
+        /*
+        JMenuItem boldItem = new JMenuItem("Bold");
+        JMenuItem italicItem = new JMenuItem("Italic");
+        */
         String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
         for (String font : fonts) {
             fontMenu.add(new JMenuItem(font)).addActionListener(new ActionListener() {
@@ -85,7 +92,8 @@ public class ImprovedTextEditor extends JFrame {
             });
         }
         editMenu.add(fontMenu);
-
+        // Add "Italic" and "Bold" JMenuItem here*
+        
         // Search menu bar
         JMenu searchMenu = new JMenu("Search");
         final JTextField searchField = new JTextField(20);
@@ -151,8 +159,10 @@ public class ImprovedTextEditor extends JFrame {
         fileMenu.add(openItem);
         fileMenu.add(saveItem);
         fileMenu.add(closeItem);
-        menuBar.add(fileMenu); // Add file menu to menu bar
-        menuBar.add(editMenu); // Add edit menu to menu bar
+        // Add file menu to menu bar
+        menuBar.add(fileMenu); 
+        // Add edit menu to menu bar
+        menuBar.add(editMenu); 
         
         // Add search menu to menu bar
         searchMenu.add(findItem);
@@ -301,3 +311,5 @@ class SyntaxHighlighter {
         }
     }
 }
+
+
